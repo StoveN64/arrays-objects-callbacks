@@ -125,17 +125,7 @@ function uniq (arr1, cb){
   cb(arr2)
 } 
 
-function uniq(arr,cb){
-  for(i=0;i<arr.length;i++){
-  for(j=i+1;j<arr.length;j++){
-  if(arr[i]===arr[j]){
-  arr.splice(i,1)
-  j--
-  }
-  }
-  
-  } cb(arr)
-  }
+
 // Do not edit the code below.
 uniq(names, function(uniqArr){
   console.log('The new names array with all the duplicate items removed is ', uniqArr);
